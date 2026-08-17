@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import {
   ArrowLeft, Edit3, Trash2, Plus, MessageSquare,
-  TrendingUp, Calendar, AlertTriangle, Star, ThumbsUp, ThumbsDown,
+  AlertTriangle, Star, ThumbsUp, ThumbsDown,
 } from 'lucide-react';
 import { store } from '../store';
 import type { SkillRatings, ScoutNoteType } from '../types';

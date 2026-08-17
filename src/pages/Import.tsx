@@ -239,7 +239,7 @@ function convertToPlayers(parsed: ParsedPlayer[]): Player[] {
   return parsed.map(p => {
     const skills: SkillRatings = { ...DEFAULT_SKILLS };
     for (const [k, v] of Object.entries(p.skills)) {
-      if (v !== undefined) (skills as Record<string, number>)[k] = Math.min(10, Math.max(1, v));
+      if (v !== undefined) (skills as unknown as Record<string, number>)[k] = Math.min(10, Math.max(1, v));
     }
     return {
       id: uuid(),

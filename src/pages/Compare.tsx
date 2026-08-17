@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { store } from '../store';
-import type { Player, SkillRatings } from '../types';
-import { getAge, formatHeight, formatWeight, SKILL_LABELS } from '../types';
+import type { SkillRatings } from '../types';
+import { getAge, SKILL_LABELS } from '../types';
 import { SkillRadar } from '../components/SkillRadar';
 
 export function Compare() {

@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Search, SlidersHorizontal, Download, Upload } from 'lucide-react';
 import { store } from '../store';
-import type { Player, Position, League, AgeGroup } from '../types';
+import type { Position, League, AgeGroup } from '../types';
 import { PlayerCard } from '../components/PlayerCard';
 
 export function PlayerList() {
