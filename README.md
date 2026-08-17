@@ -10,7 +10,9 @@ A web application for scouting and tracking young basketball prospects across NC
 - **Draft Rankings** — Sortable rankings by draft class (2028, 2029, 2030) with weekly snapshot saving and CSV export
 - **Head-to-Head Compare** — Side-by-side comparison with overlaid radar charts and stat breakdowns
 - **Statistical Leaders** — Top 5 leaders across categories, position/age distributions, and skill averages by position
+- **CSV/JSON Import** — Import players, game logs, and scout notes from CSV or JSON files with smart field mapping
 - **Import/Export** — JSON import/export for backing up and sharing prospect databases
+- **Landing Page** — ProScout branded entry page with app highlights
 
 ## Tech Stack
 
@@ -29,7 +31,7 @@ npm install
 npm run dev
 ```
 
-The app opens at `http://localhost:5173` and comes pre-loaded with 93 real prospects across three draft classes, including international players from European leagues.
+The app opens at `http://localhost:5173`. Import prospect data via CSV/JSON from ESPN, 247Sports, Basketball Reference, or other sources.
 
 ## Data
 

@@ -25,8 +25,8 @@ export function About() {
         <p className="text-sm text-text leading-relaxed">
           ProScout is a web application for scouting and tracking young basketball prospects
           across NCAA, High School, and AAU levels. Organize rankings by NBA draft class
-          (2028–2030), log game stats, compare players head-to-head, and monitor prospect
-          development over time. Pre-loaded with 93 real prospects including international players.
+          log game stats, compare players head-to-head, and monitor prospect
+          development over time. Import data via CSV/JSON from ESPN, 247Sports, and other sources.
         </p>
       </div>
 

@@ -110,7 +110,7 @@ export function PlayerList() {
         </select>
         <select className={selectClass} value={leagueFilter} onChange={e => setLeagueFilter(e.target.value as League | '')}>
           <option value="">All Leagues</option>
-          {(['NBA', 'Euroleague', 'NCAA', 'FIBA', 'Other'] as League[]).map(l => <option key={l}>{l}</option>)}
+          {(['NCAA', 'High School', 'AAU', 'Euroleague', 'NBA', 'Other'] as League[]).map(l => <option key={l}>{l}</option>)}
         </select>
         <select className={selectClass} value={ageFilter} onChange={e => setAgeFilter(e.target.value as AgeGroup | '')}>
           <option value="">All Ages</option>

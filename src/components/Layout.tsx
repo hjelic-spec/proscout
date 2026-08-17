@@ -1,12 +1,13 @@
-import { NavLink, Outlet } from 'react-router-dom';
-import { Users, BarChart3, GitCompareArrows, Trophy, LayoutDashboard, Info } from 'lucide-react';
+import { NavLink, Link, Outlet } from 'react-router-dom';
+import { Users, BarChart3, GitCompareArrows, Trophy, LayoutDashboard, Info, Upload } from 'lucide-react';
 
 const navItems = [
-  { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/players', icon: Users, label: 'Players' },
   { to: '/stats', icon: BarChart3, label: 'Stats' },
   { to: '/compare', icon: GitCompareArrows, label: 'Compare' },
   { to: '/rankings', icon: Trophy, label: 'Rankings' },
+  { to: '/import', icon: Upload, label: 'Import' },
   { to: '/about', icon: Info, label: 'About' },
 ];
 
@@ -14,13 +15,13 @@ export function Layout() {
   return (
     <div className="flex h-screen">
       <nav className="w-56 bg-court-light border-r border-court-border flex flex-col shrink-0">
-        <div className="p-4 border-b border-court-border">
+        <Link to="/" className="block p-4 border-b border-court-border hover:bg-court-lighter/50 transition-colors">
           <h1 className="text-lg font-bold text-text-bright flex items-center gap-2">
             <span className="text-2xl">🏀</span>
             <span>ProScout</span>
           </h1>
           <p className="text-xs text-text-dim mt-1">Basketball Prospect Scouting</p>
-        </div>
+        </Link>
         <div className="flex-1 py-2">
           {navItems.map(({ to, icon: Icon, label }) => (
             <NavLink
@@ -33,7 +34,7 @@ export function Layout() {
                     : 'text-text-dim hover:text-text hover:bg-court-lighter/50'
                 }`
               }
-              end={to === '/'}
+              end
             >
               <Icon size={18} />
               {label}
