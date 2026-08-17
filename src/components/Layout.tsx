@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom';
-import { Users, BarChart3, GitCompareArrows, Trophy, LayoutDashboard } from 'lucide-react';
+import { Users, BarChart3, GitCompareArrows, Trophy, LayoutDashboard, Info } from 'lucide-react';
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
@@ -7,6 +7,7 @@ const navItems = [
   { to: '/stats', icon: BarChart3, label: 'Stats' },
   { to: '/compare', icon: GitCompareArrows, label: 'Compare' },
   { to: '/rankings', icon: Trophy, label: 'Rankings' },
+  { to: '/about', icon: Info, label: 'About' },
 ];
 
 export function Layout() {

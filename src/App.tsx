@@ -7,6 +7,7 @@ import { AddPlayer } from './pages/AddPlayer';
 import { Stats } from './pages/Stats';
 import { Compare } from './pages/Compare';
 import { Rankings } from './pages/Rankings';
+import { About } from './pages/About';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/stats" element={<Stats />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/rankings" element={<Rankings />} />
+          <Route path="/about" element={<About />} />
         </Route>
       </Routes>
     </BrowserRouter>
